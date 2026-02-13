@@ -15,9 +15,10 @@
    10. Certifications
    11. Languages
    12. Contact
-   13. Footer
-   14. Responsive Design (Mobile)
-   15. Print Styles
+   13. Homepage
+   14. Footer
+   15. Responsive Design (Mobile)
+   16. Print Styles
    
    ===================================================== */
 
@@ -423,7 +424,43 @@ main {
 
 
 /* =====================================================
-   13. FOOTER
+   13. HOMEPAGE
+   =====================================================
+   Homepage-specific styles for intro and CTA.
+*/
+.homepage-intro {
+    text-align: center;
+}
+
+.homepage-intro p {
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-large);
+}
+
+.homepage-cta {
+    margin-top: var(--spacing-medium);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: var(--spacing-small) var(--spacing-medium);
+    border: 1px solid var(--color-text-primary);
+    font-size: var(--font-size-small);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--color-text-primary);
+    color: var(--color-background);
+    opacity: 1;
+}
+
+
+/* =====================================================
+   14. FOOTER
    =====================================================
 */
 footer {
@@ -436,7 +473,7 @@ footer {
 
 
 /* =====================================================
-   14. RESPONSIVE DESIGN (Mobile)
+   15. RESPONSIVE DESIGN (Mobile)
    =====================================================
    Adjustments for screens smaller than 768px.
 */
@@ -485,7 +522,7 @@ footer {
 
 
 /* =====================================================
-   15. PRINT STYLES
+   16. PRINT STYLES
    =====================================================
    Optimized for printing / exporting to PDF.
 */

@@ -10,23 +10,12 @@
 
     <!-- ========================================
          NAVIGATION
-         ========================================
-         To add/remove nav links:
-         1. Add/remove <li><a href="#section-id">Label</a></li>
-         2. Make sure the href matches the section's id attribute
-    -->
+         ======================================== -->
     <nav>
         <div class="nav-content">
-            <a href="#" class="logo">GC</a>
+            <a href="index.html" class="logo">GC</a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#languages">Languages</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
             </ul>
         </div>
     </nav>
@@ -34,20 +23,15 @@
 
 
     <!-- ========================================
-         HERO / HEADER
+         HOMEPAGE HERO
          ========================================
-         Main introduction section with name, title, and contact links.
-         Contact links are displayed in a justified row below your info.
+         Full-height intro section with name and main navigation.
     -->
     <header class="hero">
         <h1>Gionatan Conti</h1>
         <p class="subtitle">Computer Engineering Student</p>
         <p class="location">University of Salerno</p>
         
-        <!-- Contact Links Row
-             To add a link: Copy one <a> element and change href and text
-             To remove: Delete the entire <a> element
-        -->
         <div class="hero-links">
             <a href="mailto:gionatan.conti04@gmail.com">Email</a>
             <a href="https://linkedin.com/in/gionatan-conti" target="_blank">LinkedIn</a>
@@ -60,279 +44,26 @@
     <main>
 
         <!-- ========================================
-             ABOUT ME SECTION
-             ========================================
-             Brief introduction about yourself.
-             Just edit the paragraph text below.
-        -->
-        <section id="about" class="section">
-            <h2>About Me</h2>
+             WELCOME SECTION
+             ======================================== -->
+        <section class="section homepage-intro">
+            <h2>Welcome</h2>
             <p>
                 I am a passionate computer engineering student at the University of Salerno. 
                 I enjoy solving problems through code and am always eager to learn new technologies.
             </p>
-            <!-- TIP: You can add multiple paragraphs here if needed -->
-        </section>
-        <!-- END ABOUT ME -->
-
-
-        <!-- ========================================
-             EDUCATION SECTION
-             ========================================
-             To add a new education entry:
-             1. Copy the entire <div class="timeline-item">...</div> block
-             2. Paste it below the existing one
-             3. Update the date, degree, school, and description
-             
-             To remove: Delete the entire <div class="timeline-item">...</div> block
-        -->
-        <section id="education" class="section">
-            <h2>Education</h2>
-            <div class="timeline">
-
-                <!-- Education Item Template -->
-                <div class="timeline-item">
-                    <span class="date">2022 - Present</span>
-                    <h3>Bachelor's in Computer Engineering</h3>
-                    <p class="company">University of Salerno</p>
-                    <p>Relevant coursework: Algorithms, Data Structures, Operating Systems, Computer Networks.</p>
-                </div>
-                <!-- End Education Item -->
-
-                <!-- ADD MORE EDUCATION ITEMS HERE -->
-
+            <div class="homepage-cta">
+                <a href="portfolio.html" class="cta-button">View My Portfolio</a>
             </div>
         </section>
-        <!-- END EDUCATION -->
-
-
-        <!-- ========================================
-             EXPERIENCE SECTION
-             ========================================
-             To add a new experience entry:
-             1. Copy the entire <div class="timeline-item">...</div> block
-             2. Paste it below the existing one
-             3. Update the date, position, company, and description
-             
-             To remove: Delete the entire <div class="timeline-item">...</div> block
-        -->
-        <section id="experience" class="section">
-            <h2>Experience</h2>
-            <div class="timeline">
-
-                <!-- Experience Item Template -->
-                <div class="timeline-item">
-                    <span class="date">2024 - Present</span>
-                    <h3>Position Title</h3>
-                    <p class="company">Company Name</p>
-                    <p>Description of your role, responsibilities, and achievements.</p>
-                </div>
-                <!-- End Experience Item -->
-
-                <!-- ADD MORE EXPERIENCE ITEMS HERE -->
-
-            </div>
-        </section>
-        <!-- END EXPERIENCE -->
-
-
-        <!-- ========================================
-             PROJECTS SECTION
-             ========================================
-             To add a new project:
-             1. Copy the entire <article class="project-card">...</article> block
-             2. Paste it inside the projects-grid div
-             3. Update the title, description, and links
-             
-             To remove: Delete the entire <article class="project-card">...</article> block
-        -->
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-
-                <!-- Project Card Template -->
-                <article class="project-card">
-                    <h3>Project Name</h3>
-                    <p>Brief description of the project, what problem it solves, and technologies used.</p>
-                    <div class="project-links">
-                        <a href="#">View Project</a>
-                        <a href="#">GitHub</a>
-                    </div>
-                </article>
-                <!-- End Project Card -->
-
-                <!-- Project Card Template -->
-                <article class="project-card">
-                    <h3>Another Project</h3>
-                    <p>Brief description of the project, what problem it solves, and technologies used.</p>
-                    <div class="project-links">
-                        <a href="#">View Project</a>
-                        <a href="#">GitHub</a>
-                    </div>
-                </article>
-                <!-- End Project Card -->
-
-                <!-- ADD MORE PROJECT CARDS HERE -->
-
-            </div>
-        </section>
-        <!-- END PROJECTS -->
-
-
-        <!-- ========================================
-             SKILLS SECTION
-             ========================================
-             To add a new skill category:
-             1. Copy the entire <div class="skill-category">...</div> block
-             2. Paste it inside the skills-container div
-             3. Update the category title and list items
-             
-             To add a skill to existing category:
-             1. Add a new <li>Skill Name</li> inside the <ul class="skill-list">
-             
-             To remove: Delete the <li> for a skill, or entire category block
-        -->
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <div class="skills-container">
-
-                <!-- Skill Category Template -->
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul class="skill-list">
-                        <li>C</li>
-                        <li>Python</li>
-                        <!-- ADD MORE SKILLS HERE -->
-                    </ul>
-                </div>
-                <!-- End Skill Category -->
-
-                <!-- Skill Category Template -->
-                <div class="skill-category">
-                    <h3>Technologies</h3>
-                    <ul class="skill-list">
-                        <li>Linux</li>
-                        <li>Microsoft/Windows</li>
-                        <li>Git</li>
-                        <li>AI</li>
-                        <!-- ADD MORE SKILLS HERE -->
-                    </ul>
-                </div>
-                <!-- End Skill Category -->
-
-                <!-- Skill Category Template -->
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <ul class="skill-list">
-                        <li>Problem Solving</li>
-                        <li>Team Collaboration</li>
-                        <li>Communication</li>
-                        <!-- ADD MORE SKILLS HERE -->
-                    </ul>
-                </div>
-                <!-- End Skill Category -->
-
-                <!-- ADD MORE SKILL CATEGORIES HERE -->
-
-            </div>
-        </section>
-        <!-- END SKILLS -->
-
-
-        <!-- ========================================
-             CERTIFICATIONS SECTION
-             ========================================
-             To add a new certification:
-             1. Copy the entire <div class="certification-item">...</div> block
-             2. Paste it inside the certifications-list div
-             3. Update the name, issuer, and date
-             
-             To remove: Delete the entire <div class="certification-item">...</div> block
-        -->
-        <section id="certifications" class="section">
-            <h2>Certifications</h2>
-            <div class="certifications-list">
-
-                <!-- Certification Item Template -->
-                <div class="certification-item">
-                    <h3>Certification Name</h3>
-                    <p class="issuer">Issuing Organization</p>
-                    <span class="date">2024</span>
-                </div>
-                <!-- End Certification Item -->
-
-                <!-- ADD MORE CERTIFICATIONS HERE -->
-
-            </div>
-        </section>
-        <!-- END CERTIFICATIONS -->
-
-
-        <!-- ========================================
-             LANGUAGES SECTION
-             ========================================
-             To add a new language:
-             1. Copy the entire <div class="language-item">...</div> block
-             2. Paste it inside the languages-list div
-             3. Update the language name and proficiency level
-             
-             Proficiency levels: Native, Fluent, Advanced, Intermediate, Basic
-             
-             To remove: Delete the entire <div class="language-item">...</div> block
-        -->
-        <section id="languages" class="section">
-            <h2>Languages</h2>
-            <div class="languages-list">
-
-                <!-- Language Item Template -->
-                <div class="language-item">
-                    <span class="language-name">Italian</span>
-                    <span class="language-level">Native</span>
-                </div>
-                <!-- End Language Item -->
-
-                <!-- Language Item Template -->
-                <div class="language-item">
-                    <span class="language-name">English</span>
-                    <span class="language-level">Fluent</span>
-                </div>
-                <!-- End Language Item -->
-
-                <!-- ADD MORE LANGUAGES HERE -->
-
-            </div>
-        </section>
-        <!-- END LANGUAGES -->
-
-
-        <!-- ========================================
-             CONTACT SECTION
-             ========================================
-             Edit the paragraph and update the links below.
-             To add a link: Copy one <a> element and change href and text
-             To remove: Delete the entire <a> element
-        -->
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <div class="contact-content">
-                <p>Feel free to reach out to me for collaborations or opportunities.</p>
-                <div class="contact-links">
-                    <a href="mailto:gionatan.conti04@gmail.com">Email</a>
-                    <a href="https://linkedin.com/in/gionatan-conti" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/antag0ni" target="_blank">GitHub</a>
-                </div>
-            </div>
-        </section>
-        <!-- END CONTACT -->
+        <!-- END WELCOME -->
 
     </main>
 
 
     <!-- ========================================
          FOOTER
-         ========================================
-         Update the year and name as needed.
-    -->
+         ======================================== -->
     <footer>
         <p>&copy; 2026 Gionatan Conti. All rights reserved.</p>
     </footer>
