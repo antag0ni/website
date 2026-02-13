@@ -169,6 +169,24 @@ nav {
     letter-spacing: 0.05em;
 }
 
+/* Mobile menu button */
+.nav-toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-xs);
+    z-index: 1001;
+}
+
+.hamburger-line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--color-text-primary);
+    margin: 5px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
 /* =====================================================
    5. HERO / HEADER SECTION
@@ -487,16 +505,64 @@ footer {
         font-size: 1.5rem;
     }
 
-    /* Stack nav vertically */
+    /* Mobile navigation */
     .nav-content {
-        flex-direction: column;
-        gap: var(--spacing-small);
+        position: relative;
+        flex-wrap: wrap;
     }
 
+    /* Show hamburger button */
+    .nav-toggle-btn {
+        display: block;
+        position: absolute;
+        right: var(--spacing-medium);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* Hamburger to X animation */
+    .nav-toggle-btn.active .hamburger-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav-toggle-btn.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle-btn.active .hamburger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Dropdown menu styling */
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: var(--spacing-small);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--color-background);
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, border-bottom 0.3s ease;
+        border-bottom: 0px solid var(--color-border);
+    }
+
+    .nav-links.active {
+        max-height: 500px;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid var(--color-border);
+    }
+
+    .nav-links a {
+        display: block;
+        padding: var(--spacing-small) var(--spacing-medium);
     }
 
     /* Reduce section padding */
